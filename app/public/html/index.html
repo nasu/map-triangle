@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/index.css"/>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="form">
+        <input type="text" id="station_1" placeholder="駅名1"/><br/>
+        <input type="text" id="station_2" placeholder="駅名2"/><br/>
+        <input type="text" id="station_3" placeholder="駅名3"/><br/>
+        <button name="submit" onclick="search()">探す</button>
+    </div>
+    <script src="/js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{.}}&libraries=places&callback=initMap"></script>
+  </body>
+</html>
